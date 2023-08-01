@@ -15,7 +15,7 @@ test.describe("Login Lambda", async () => {
         await lamdaLogin.Login(email, password);
     })
 
-    test("Menu Selection", async ({ browser, baseURL }) => {
+    test("Menu Selection and checkout", async ({ browser, baseURL }) => {
         const context = await browser.newContext({
             //storageState: "./auth.json"
         });
